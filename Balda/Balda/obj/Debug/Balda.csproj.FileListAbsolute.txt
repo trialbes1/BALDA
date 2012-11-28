@@ -1,0 +1,8 @@
+D:\BALDA\Balda\Balda\bin\Debug\Balda.exe
+D:\BALDA\Balda\Balda\bin\Debug\Balda.pdb
+D:\BALDA\Balda\Balda\obj\Debug\ResolveAssemblyReference.cache
+D:\BALDA\Balda\Balda\obj\Debug\Balda.Form1.resources
+D:\BALDA\Balda\Balda\obj\Debug\Balda.Properties.Resources.resources
+D:\BALDA\Balda\Balda\obj\Debug\Balda.csproj.GenerateResource.Cache
+D:\BALDA\Balda\Balda\obj\Debug\Balda.exe
+D:\BALDA\Balda\Balda\obj\Debug\Balda.pdb
