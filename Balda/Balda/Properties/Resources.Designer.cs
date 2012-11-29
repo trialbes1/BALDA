@@ -67,6 +67,13 @@ namespace Balda.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _13_1712_oboi_list_v_kletochku_1280x8001 {
+            get {
+                object obj = ResourceManager.GetObject("13_1712_oboi_list_v_kletochku_1280x8001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap button_black_repeat {
             get {
                 object obj = ResourceManager.GetObject("button_black_repeat", resourceCulture);

@@ -99,5 +99,24 @@ namespace Balda
         {
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            Form3 f3 = new Form3();
+            //f3.ShowDialog();
+            DialogResult res = f3.ShowDialog();
+            if (res == DialogResult.Yes)
+            {
+                //Form4 f4 = new Form4();
+               // f4.ShowDialog();
+
+                beginn.Visible = true;
+                //start = 2;
+
+
+            }
+            else this.Close();
+        }
     }
 }
