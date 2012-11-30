@@ -16,6 +16,7 @@ namespace Balda
         {
             InitializeComponent();
         }
+        Form2 f2 = new Form2();
         static public int currX;
         static public int currY;
         int start = 1;
@@ -117,6 +118,70 @@ namespace Balda
 
             }
             else this.Close();
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            bool pr = false;
+            Graphics graph = CreateGraphics();
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (input == true)
+                    { }
+                    else
+                    {
+                        inpWORD.Visible = true;
+                        if (check[j, i] == false &&
+                            (check1[j + 2, i + 1] == true || check1[j, i + 1] == true || check1[j + 1, i] == true || check1[j + 1, i + 2] == true))
+                        {
+                            if (currX > TOP + i * 50 && currY > TOP + j * 50 && currX < 175 + (i) * 50 && currY < 175 + j * 50)
+                            {
+                                graph.FillRectangle(yellowBrush, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                                f2.ShowDialog();
+                                if (Form2.str.Length == 0)
+                                {
+                                    graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                                }
+                                else
+                                {
+                                    back.Visible = true;
+                                    //Form2.;
+                                    ti = i;
+                                    tj = j;
+                                    pr = true;
+                                    ////////////////////////////////////////////////
+                                    {
+
+                                        TEMP = Form2.str;
+                                        Form2.str = "";
+                                        mas[tj, ti] = TEMP[0];
+                                        check[tj, ti] = true; check1[tj + 1, ti + 1] = true;
+                                        //textBox1.Visible = false;
+                                        //button1.Visible = false;
+                                        graph.FillRectangle(white, TOP + 3 + ti * 50, TOP + 3 + tj * 50, 45, 45);
+                                        graph.DrawString(mas[tj, ti].ToString(), drawFont, drawBrush, TOP + 50 * ti + 15, TOP + 50 * tj + 15);
+                                        input = true;
+                                        inpWORD.Visible = false;
+                                        inputt.Visible = true;
+
+                                    }
+                                }
+                            }
+                            if (pr == true) break;
+
+                        }
+                    }
+                 if (pr == true) { pr = false; break; }
+                }
+            }
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            currX = e.X;
+            currY = e.Y;
         }
     }
 }

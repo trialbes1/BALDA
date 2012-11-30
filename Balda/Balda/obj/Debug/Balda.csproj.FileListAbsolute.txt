@@ -16,3 +16,14 @@ D:\bl\Balda\Balda\obj\Debug\Balda.Properties.Resources.resources
 D:\bl\Balda\Balda\obj\Debug\Balda.csproj.GenerateResource.Cache
 D:\balda\Balda\Balda\obj\Debug\Balda.Form3.resources
 D:\balda\Balda\Balda\obj\Debug\Balda.Form4.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.exe
+C:\balda\Balda\Balda\obj\Debug\Balda.pdb
+C:\balda\Balda\Balda\obj\Debug\ResolveAssemblyReference.cache
+C:\balda\Balda\Balda\obj\Debug\Balda.Form1.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.Form2.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.Form3.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.Form4.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.Properties.Resources.resources
+C:\balda\Balda\Balda\obj\Debug\Balda.csproj.GenerateResource.Cache
+C:\balda\Balda\Balda\bin\Debug\Balda.exe
+C:\balda\Balda\Balda\bin\Debug\Balda.pdb
