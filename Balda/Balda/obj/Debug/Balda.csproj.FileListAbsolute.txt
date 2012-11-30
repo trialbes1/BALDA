@@ -27,3 +27,5 @@ C:\balda\Balda\Balda\obj\Debug\Balda.Properties.Resources.resources
 C:\balda\Balda\Balda\obj\Debug\Balda.csproj.GenerateResource.Cache
 C:\balda\Balda\Balda\bin\Debug\Balda.exe
 C:\balda\Balda\Balda\bin\Debug\Balda.pdb
+D:\BALDA\Balda\Balda\obj\Debug\ResolveAssemblyReference.cache
+D:\BALDA\Balda\Balda\obj\Debug\Balda.Form2.resources

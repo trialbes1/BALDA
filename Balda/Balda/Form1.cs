@@ -46,12 +46,12 @@ namespace Balda
         {
             player1lb.Visible = true;
             player2lb.Visible = true;
-            //nameplayer1.Visible = true; nameplayer1.Text = Form4.player1str;
-            //nameplayer2.Visible = true; nameplayer2.Text = Form4.player2str;
+            nameplayer1.Visible = true; nameplayer1.Text = Form4.player1str;
+            nameplayer2.Visible = true; nameplayer2.Text = Form4.player2str;
             player.Visible = true;
-            //if (play == 1) player.Text = Form4.player1str;
-            //else
-            //    player.Text = Form4.player2str;
+            if (play == 1) player.Text = Form4.player1str;
+            else
+            player.Text = Form4.player2str;
             Score1.Visible = true;
             Score2.Visible = true;
             int i = 0;
