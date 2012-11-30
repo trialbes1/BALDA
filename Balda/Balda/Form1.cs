@@ -129,7 +129,37 @@ namespace Balda
                 for (int j = 0; j < 5; j++)
                 {
                     if (input == true)
-                    { }
+                    {
+                        if ((currX > TOP + i * 50 && currY > TOP + j * 50 && currX < 175 + (i) * 50 && currY < 175 + j * 50)
+                               && (doubletemp[j, i] != true))
+                        {
+
+                            if (t == 0 && check[j, i] == true)
+                            {
+                                if (ti == i && tj == j) round = true;
+                                tbWORD.Visible = true;
+                                Accept.Visible = true;
+                                graph.FillRectangle(redBrush, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                                graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                                WORD += mas[j, i].ToString();
+                                doubletemp[j, i] = true;
+                                tbWORD.Text = WORD; t++; X = j; Y = i;
+                            }
+                            else
+                            {
+                                if ((((X - j) * (X - j) < 2 && (Y - i) * (Y - i) == 0) || ((X - j) * (X - j) == 0 && (Y - i) * (Y - i) < 2)) && check[j, i] == true)
+                                {
+                                    if (ti == i && tj == j) round = true;
+                                    graph.FillRectangle(redBrush, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                                    graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                                    WORD += mas[j, i].ToString();
+                                    doubletemp[j, i] = true;
+                                    tbWORD.Text = WORD; t++; X = j; Y = i;
+                                }
+                            }
+
+                        }
+                    }
                     else
                     {
                         inpWORD.Visible = true;
