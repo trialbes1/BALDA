@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Balda">
+</Property><Property Name="Файл решения" Value="D:\balda\Balda\Balda.sln">
+</Property><Property Name="Файл параметров пользователя" Value="D:\balda\Balda\Balda.suo">
+</Property><Property Name="Date" Value="29 листопада 2012 р.">
+</Property><Property Name="Time" Value="21:12">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Balda.sln" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Balda.suo" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda.suo">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Balda.csproj" Description="Успешно создана резервная копия файла проекта: D:\balda\Balda\Backup\Balda\Balda.csproj">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form1.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form1.Designer.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form3.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form3.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form3.Designer.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Program.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Program.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Properties\AssemblyInfo.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Properties\Resources.Designer.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Properties\Settings.Designer.cs" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Properties\Settings.settings" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Resources\button_cancel (1).png" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Resources\button_cancel (1).png">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Resources\button_black_repeat.png" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Resources\button_black_repeat.png">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\13_1712_oboi_list_v_kletochku_1280x800.jpg" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\13_1712_oboi_list_v_kletochku_1280x800.jpg">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form1.resx" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Form3.resx" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Form3.resx">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Properties\Resources.resx" Description="Успешно создана резервная копия файла D:\balda\Balda\Backup\Balda\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Balda.csproj" Description="Проект успешно преобразован">
+</Event><Event ErrorLevel="3" Project="Balda" Source="Balda\Balda.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Balda.sln" Description="Преобразование решения успешно завершено">
+</Event><Event ErrorLevel="3" Project="" Source="Balda.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Balda" Source="Balda\Balda.csproj" Description="Сканирование завершено: обновление для файлов проекта не требуется.">
+</Event></UpgradeLog>
