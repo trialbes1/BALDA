@@ -122,7 +122,7 @@ namespace Balda
 
         private void Form1_Click(object sender, EventArgs e)
         {
-            bool pr = false;
+            bool pr = false;//
             Graphics graph = CreateGraphics();
             for (int i = 0; i < 5; i++)
             {
