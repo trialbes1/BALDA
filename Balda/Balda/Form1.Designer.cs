@@ -68,6 +68,7 @@
             this.Accept.Text = "Подтвердить";
             this.Accept.UseVisualStyleBackColor = true;
             this.Accept.Visible = false;
+            this.Accept.Click += new System.EventHandler(this.Accept_Click);
             // 
             // player1lb
             // 

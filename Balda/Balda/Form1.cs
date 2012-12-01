@@ -213,5 +213,174 @@ namespace Balda
             currX = e.X;
             currY = e.Y;
         }
+
+        private void Accept_Click(object sender, EventArgs e)
+        {
+            Graphics graph = CreateGraphics();
+            back.Visible = false;
+            bool pr = false;
+            bool pr1 = false;
+            string s;
+            if (round == false)
+            {
+                MessageBox.Show("Слово должно содержать введенную букву");
+                //MessageBox.Show("Такое слово уже есть!!!");
+                ///////////////////////////
+                mas[tj, ti] = ' ';
+                check[tj, ti] = false; check1[tj + 1, ti + 1] = false;
+                WORD = "";
+                t = 0;
+                doubletemp[tj, ti] = false;
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                        graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                        doubletemp[j, i] = false;
+                    }
+                }
+                input = false;
+                inpWORD.Visible = true;
+                inputt.Visible = false;
+                tbWORD.Text = "";
+                Accept.Visible = false;
+                tbWORD.Visible = false;
+            }
+            else
+            {
+                round = false;
+                for (int k = 0; k < checkword.Length; k++)
+                    if (checkword[k] == WORD)
+                        pr1 = true;
+                if (pr1)
+                {
+                    MessageBox.Show("Такое слово уже есть!!!");
+                    ///////////////////////////
+                    mas[tj, ti] = ' ';
+                    check[tj, ti] = false; check1[tj + 1, ti + 1] = false;
+                    WORD = "";
+                    t = 0;
+                    doubletemp[tj, ti] = false;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 5; j++)
+                        {
+                            graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                            graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                            doubletemp[j, i] = false;
+                        }
+                    }
+                    input = false;
+                    inpWORD.Visible = true;
+                    inputt.Visible = false;
+                    tbWORD.Text = "";
+                    Accept.Visible = false;
+                    tbWORD.Visible = false;
+                    ////////////////////////////
+                }
+                else
+                {
+
+
+
+                    StreamReader f = new StreamReader("lib.RUS", Encoding.GetEncoding(1251)); //Создаем поток и связываем его с конкретным файлом
+                    while ((s = f.ReadLine()) != null)//пока не конец потока
+                    {
+                        if (s == WORD) pr = true;
+
+                    }
+                    if (pr)
+                    {
+                        checkword[checkwordt++] = WORD;
+                        Array.Resize(ref checkword, checkwordt + 1);
+                        wordinp(graph);
+                    }
+
+                    else
+                    {
+                        DialogResult res = MessageBox.Show("Нет такого слова!\n Добавить слово в словарь?", "", MessageBoxButtons.YesNo);
+                        if (res == DialogResult.No)
+                        {
+
+                            mas[tj, ti] = ' ';
+                            check[tj, ti] = false; check1[tj + 1, ti + 1] = false;
+                            WORD = "";
+                            t = 0;
+                            doubletemp[tj, ti] = false;
+                            for (int i = 0; i < 5; i++)
+                            {
+                                for (int j = 0; j < 5; j++)
+                                {
+                                    graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                                    graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                                    doubletemp[j, i] = false;
+                                }
+                            }
+                            input = false;
+                            inpWORD.Visible = true;
+                            inputt.Visible = false;
+                            tbWORD.Text = "";
+                            Accept.Visible = false;
+                            tbWORD.Visible = false;
+                        }
+                        else
+                        {
+                            checkword[checkwordt++] = WORD;
+                            Array.Resize(ref checkword, checkwordt + 1);
+                            wordinp(graph);
+                        }
+                    }
+                }
+                bool profend = true;
+                for (int i = 0; i < 5; i++)
+                    for (int j = 0; j < 5; j++)
+                    {
+                        if (check[j, i] == false)
+                            profend = false;
+                    }
+                
+            }
+        }
+        private void wordinp(Graphics graph)
+        {
+            t = 0;
+            if (play == 1)
+            {
+                player1score += WORD.Length;
+                player1lb.Items.Add(WORD);
+                Score1.Text = "Очки = " + player1score.ToString();
+                play = 2;
+            }
+            else
+            {
+                player2score += WORD.Length;
+                Score2.Text = "Очки = " + player2score.ToString();
+                player2lb.Items.Add(WORD);
+                play = 1;
+            }
+            WORD = "";
+            ////////////////////////////////////////////
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                    graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                    doubletemp[j, i] = false;
+                }
+            }
+            ///////////////////////////////////////////
+            input = false;
+            inputt.Visible = false;
+            tbWORD.Text = "";
+            Accept.Visible = false;
+            tbWORD.Visible = false;
+            inpWORD.Visible = true;
+            if (play == 1) player.Text = Form4.player1str;
+            else
+                player.Text = Form4.player2str;
+        }
+        
     }
 }
