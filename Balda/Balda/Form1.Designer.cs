@@ -103,6 +103,7 @@
             this.back.TabIndex = 11;
             this.back.UseVisualStyleBackColor = true;
             this.back.Visible = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Exitbbtn
             // 

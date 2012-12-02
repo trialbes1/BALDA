@@ -381,6 +381,31 @@ namespace Balda
             else
                 player.Text = Form4.player2str;
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Graphics graph = CreateGraphics();
+            mas[tj, ti] = ' ';
+            check[tj, ti] = false; check1[tj + 1, ti + 1] = false;
+            WORD = "";
+            t = 0;
+            doubletemp[tj, ti] = false;
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    graph.FillRectangle(white, TOP + 3 + i * 50, TOP + 3 + j * 50, 45, 45);
+                    graph.DrawString(mas[j, i].ToString(), drawFont, drawBrush, TOP + 50 * i + 15, TOP + 50 * j + 15);
+                    doubletemp[j, i] = false;
+                }
+            }
+            input = false;
+            inpWORD.Visible = true;
+            inputt.Visible = false;
+            tbWORD.Text = "";
+            Accept.Visible = false;
+            tbWORD.Visible = false;
+        }
         
     }
 }
