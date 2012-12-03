@@ -336,10 +336,19 @@ namespace Balda
                 for (int i = 0; i < 5; i++)
                     for (int j = 0; j < 5; j++)
                     {
+                       
                         if (check[j, i] == false)
                             profend = false;
                     }
-                
+                if (profend)
+                {
+                    if (player1score > player2score)
+                        MessageBox.Show("Выиграл игрок " + Form4.player1str + "!!!");
+                    if (player1score < player2score)
+                        MessageBox.Show("Выиграл игрок " + Form4.player2str + "!!!");
+                    if (player1score == player2score)
+                        MessageBox.Show("Ничья!!!");
+                }
             }
         }
         private void wordinp(Graphics graph)
