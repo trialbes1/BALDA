@@ -84,7 +84,7 @@ namespace Balda
         }
         private void New()
         {
-            tbWORD.Visible = true;
+            //tbWORD.Visible = true;
             Graphics graph = CreateGraphics();
             for (int i = 0; i < 5; i++)
                 for (int j = 0; j < 5; j++)
@@ -109,15 +109,16 @@ namespace Balda
             DialogResult res = f3.ShowDialog();
             if (res == DialogResult.Yes)
             {
-                Form4 f4 = new Form4();
-                f4.ShowDialog();
-
-                beginn.Visible = true;
+                beginn.Visible = true; 
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
                 //start = 2;
 
 
             }
-            else this.Close();
+           else this.Close();
+
+            
         }
 
         private void Form1_Click(object sender, EventArgs e)
@@ -223,7 +224,7 @@ namespace Balda
             string s;
             if (round == false)
             {
-                MessageBox.Show("Слово должно содержать введенную букву");
+                MessageBox.Show("Слово должно содержать введенную букву!");
                 //MessageBox.Show("Такое слово уже есть!!!");
                 ///////////////////////////
                 mas[tj, ti] = ' ';
@@ -255,7 +256,7 @@ namespace Balda
                         pr1 = true;
                 if (pr1)
                 {
-                    MessageBox.Show("Такое слово уже есть!!!");
+                    MessageBox.Show("Такое слово уже есть!");
                     ///////////////////////////
                     mas[tj, ti] = ' ';
                     check[tj, ti] = false; check1[tj + 1, ti + 1] = false;
@@ -299,7 +300,7 @@ namespace Balda
 
                     else
                     {
-                        DialogResult res = MessageBox.Show("Нет такого слова!\n Добавить слово в словарь?", "", MessageBoxButtons.YesNo);
+                        DialogResult res = MessageBox.Show("Нет такого слова!\nПодтвердить введенное слово?", "", MessageBoxButtons.YesNo);
                         if (res == DialogResult.No)
                         {
 

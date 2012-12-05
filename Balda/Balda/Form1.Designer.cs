@@ -72,6 +72,7 @@
             // 
             // player1lb
             // 
+            this.player1lb.BackColor = System.Drawing.SystemColors.Window;
             this.player1lb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.player1lb.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.player1lb.FormattingEnabled = true;
@@ -84,6 +85,7 @@
             // 
             // player2lb
             // 
+            this.player2lb.BackColor = System.Drawing.SystemColors.Window;
             this.player2lb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.player2lb.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.player2lb.FormattingEnabled = true;
@@ -97,7 +99,7 @@
             // back
             // 
             this.back.Image = global::Balda.Properties.Resources.button_black_repeat;
-            this.back.Location = new System.Drawing.Point(371, 12);
+            this.back.Location = new System.Drawing.Point(391, 12);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(50, 50);
             this.back.TabIndex = 11;
@@ -108,7 +110,7 @@
             // Exitbbtn
             // 
             this.Exitbbtn.Image = global::Balda.Properties.Resources.button_cancel__1_;
-            this.Exitbbtn.Location = new System.Drawing.Point(427, 12);
+            this.Exitbbtn.Location = new System.Drawing.Point(447, 12);
             this.Exitbbtn.Name = "Exitbbtn";
             this.Exitbbtn.Size = new System.Drawing.Size(50, 50);
             this.Exitbbtn.TabIndex = 10;
@@ -188,12 +190,15 @@
             // 
             // tbWORD
             // 
+            this.tbWORD.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tbWORD.Enabled = false;
-            this.tbWORD.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbWORD.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbWORD.Location = new System.Drawing.Point(125, 380);
             this.tbWORD.Name = "tbWORD";
-            this.tbWORD.Size = new System.Drawing.Size(250, 30);
+            this.tbWORD.ReadOnly = true;
+            this.tbWORD.Size = new System.Drawing.Size(250, 33);
             this.tbWORD.TabIndex = 19;
+            this.tbWORD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbWORD.Visible = false;
             // 
             // Form1
@@ -201,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Balda.Properties.Resources._13_1712_oboi_list_v_kletochku_1280x800;
-            this.ClientSize = new System.Drawing.Size(484, 462);
+            this.ClientSize = new System.Drawing.Size(509, 462);
             this.Controls.Add(this.tbWORD);
             this.Controls.Add(this.player);
             this.Controls.Add(this.inputt);
