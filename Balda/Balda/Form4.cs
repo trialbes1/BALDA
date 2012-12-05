@@ -26,19 +26,20 @@ namespace Balda
             
                 if (textBox1.Text.Length == 0)
                 {
-                    MessageBox.Show("Введите имя для 1го игрока");
+                    MessageBox.Show("Введите имя для 1го игрока!");
                     pr = false; 
                 }
                 else
                     player1str = textBox1.Text;
                 if (textBox2.Text.Length == 0)
                 {
-                    MessageBox.Show("Введите имя для 2го игрока");
+                    MessageBox.Show("Введите имя для 2го игрока!");
                     pr = false;
                 }
                 else
                     player2str = textBox2.Text;
-                if (textBox1.Text == textBox2.Text) {
+                if (textBox1.Text == textBox2.Text&&textBox2.Text.Length != 0)
+                {
                     MessageBox.Show("Имена совпадают!Введите различные имена!"); pr = false;
                 }
             if (pr)
@@ -79,6 +80,11 @@ namespace Balda
             {
                 if (e.KeyChar != (char)Keys.Back) e.Handled = true;
             }
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -67,6 +67,7 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.NewGame);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form3_Paint);
             this.ResumeLayout(false);
